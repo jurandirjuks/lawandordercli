@@ -1,4 +1,4 @@
-package application;
+package application.models;
 
 public interface Memento {
     User saveState();

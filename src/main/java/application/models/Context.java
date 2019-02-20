@@ -1,6 +1,5 @@
-package application;
+package application.models;
 
-import application.states.Evidence;
 import application.states.State;
 
 import java.util.Set;

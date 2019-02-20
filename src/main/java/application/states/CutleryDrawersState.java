@@ -1,11 +1,12 @@
 package application.states;
 
-import application.Context;
+import application.models.Context;
+import application.models.Evidence;
 
 public class CutleryDrawersState extends BaseState {
 
-    public CutleryDrawersState(KitchenState kitchenState) {
-        statesMaps.put("1", kitchenState);
+    public CutleryDrawersState(BaseState toReturn) {
+        statesMaps.put("1", toReturn);
     }
 
     @Override

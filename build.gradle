@@ -1,6 +1,17 @@
 plugins {
     id 'java'
+    id 'application'
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'application.Main'
+        )
+    }
+}
+
+mainClassName = 'application.Main'
 
 group 'br.com.lawandordercli'
 version '1.0-SNAPSHOT'
@@ -13,4 +24,5 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
 }

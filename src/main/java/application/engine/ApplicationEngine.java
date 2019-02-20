@@ -1,5 +1,8 @@
-package application;
+package application.engine;
 
+import application.models.Context;
+import application.models.ContextImpl;
+import application.models.User;
 import application.states.InitialState;
 
 import java.io.*;
@@ -7,13 +10,12 @@ import java.io.*;
 
 public class ApplicationEngine {
 
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public void start() throws IOException {
-
-        System.out.println("\n\nWhats your name detective?");
+        System.out.println("\n\n Whats your name detective?\n");
         String name = br.readLine();
-        User user = this.getUser(name);
+        User user = this.createUser(name);
 
         Context context = new ContextImpl();
 
@@ -33,7 +35,7 @@ public class ApplicationEngine {
         context.readOption(option);
     }
 
-    private User getUser(String name) {
+    private User createUser(String name) {
         return new User(name);
     }
 }

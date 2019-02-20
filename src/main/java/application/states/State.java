@@ -1,6 +1,6 @@
 package application.states;
 
-import application.Context;
+import application.models.Context;
 
 public interface State {
 

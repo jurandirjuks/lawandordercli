@@ -1,7 +1,5 @@
 package application.states;
 
-import application.Context;
-
 public class EndGameState extends BaseState {
 
     @Override

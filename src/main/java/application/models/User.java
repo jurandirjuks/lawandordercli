@@ -1,9 +1,6 @@
-package application;
-
-import application.states.Evidence;
+package application.models;
 
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 public class User implements Memento {

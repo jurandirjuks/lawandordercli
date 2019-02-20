@@ -8,7 +8,7 @@ public class InitialState extends BaseState {
     }
 
     @Override
-    public void printStateMsg() {
+    public void showOptions() {
         System.out.println("\nYou were called to settle a case. A young woman dead in her apartment." +
         "\nYou should investigate and search for evidence in the apartment");
         System.out.println("It's a murder scene. " +

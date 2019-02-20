@@ -1,6 +1,7 @@
 package application.states;
 
-import application.Context;
+import application.models.Context;
+import application.models.Evidence;
 
 public class WoundState extends BaseState {
 

@@ -1,18 +1,19 @@
-package application.states;
+package application.actors;
 
-import application.Context;
+import application.models.Context;
+import application.models.Evidence;
 
 import java.util.Arrays;
 import java.util.Set;
 
 public class ConclusionCalculator {
 
-    private String BAD_ENDING = "\nIt's all okay, it really was suicide";
+    public static String BAD_ENDING = "\nIt's all okay, it really was suicide";
 
-    private String INCOCLUSIVE_ENDING = "\n" +
+    public static String INCOCLUSIVE_ENDING = "\n" +
             "I've found some suspicious things, but I will not charge anybody with just found it here, better call a senior detective.";
 
-    private String GOOD_ENDING = "\nThe knife in the hand of the victim is not the murder weapon," +
+    public static String GOOD_ENDING = "\nThe knife in the hand of the victim is not the murder weapon," +
             " it was placed after the attack and the killer's own finger was used to simulate the blood on the knife. " +
             "\nThe victim's personal diary suggests she was the victim of a passionate attack and the guilty tried " +
             "to make it appear that it was suicide. " +
