@@ -1,17 +1,16 @@
 plugins {
     id 'java'
-    id 'application'
 }
 
 jar {
+
+    archiveName = "lawandordercli.jar"
     manifest {
         attributes(
                 'Main-Class': 'application.Main'
         )
     }
 }
-
-mainClassName = 'application.Main'
 
 group 'br.com.lawandordercli'
 version '1.0-SNAPSHOT'
