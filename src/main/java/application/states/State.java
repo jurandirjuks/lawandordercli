@@ -1,6 +1,6 @@
 package application.states;
 
-import application.User;
+import application.Context;
 
 public interface State {
 
@@ -10,5 +10,5 @@ public interface State {
 
     void printStateMsg();
 
-    State evalState(String option, User user);
+    State evalState(String option, Context context);
 }

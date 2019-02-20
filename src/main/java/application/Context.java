@@ -1,6 +1,9 @@
 package application;
 
+import application.states.Evidence;
 import application.states.State;
+
+import java.util.Set;
 
 public interface Context {
 
@@ -14,4 +17,13 @@ public interface Context {
 
     void readOption(String option);
 
+    void saveState();
+
+    void loadState();
+
+    void addExperiencePoint(Integer experiencePoints);
+
+    void addEvidence(Evidence knifeMissig);
+
+    Set<Evidence> getEvidences();
 }
